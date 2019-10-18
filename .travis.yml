@@ -1,0 +1,8 @@
+services:
+  - docker
+
+script:
+  - ./build.sh
+
+after_success:
+  - ./push.sh
